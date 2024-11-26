@@ -1,15 +1,19 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
+/build
+/public/build
 
-# Node
+# Node.js dependencies
 /node_modules
-npm-debug.log
-yarn-error.log
+/npm-debug.log*
+/yarn-error.log*
+/pnpm-debug.log*
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
 
 # IDEs and editors
 .idea/
@@ -26,17 +30,71 @@ yarn-error.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+.history/
 
-# Miscellaneous
+# Coverage and test results
+/coverage
+/karma-coverage
+/nyc_output
+/test-results
+
+# Angular and frontend caches
 /.angular/cache
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+.eslintcache
+/cache
+
+# Logs
+*.log
+*.log.*
 
 # System files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# Miscellaneous
+/libpeerconnection.log
+/connect.lock
+/testem.log
+/typings
+.env
+.env.local
+.env.*.local
+.env.example
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore archives
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Ignore build artifacts
+*.out
+*.obj
+*.class
+*.pyc
+*.pyo
+*.o
+*.a
+*.bin
+*.lib
+*.dll
+*.pdb
+*.exe

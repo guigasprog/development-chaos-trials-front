@@ -1,59 +1,131 @@
-# Client
+# Chaos Trials - Frontend (Em Desenvolvimento)  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Bem-vindo ao repositório de desenvolvimento do **Chaos Trials**, um emocionante RPG baseado na web! Este projeto é focado no desenvolvimento do **frontend** e tem como objetivo oferecer uma experiência imersiva e interativa para os jogadores, combinando design intuitivo, animações fluídas e mecânicas de jogo envolventes.  
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎮 Sobre o Jogo  
 
-```bash
-ng serve
-```
+**Chaos Trials** é um RPG no qual os jogadores embarcam em aventuras épicas, enfrentam inimigos poderosos e exploram um mundo repleto de desafios. O jogo oferece:  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Criação de Personagens**: Personalize seu herói com habilidades, armas e aparência únicas.  
+- **Exploração de Mapas**: Viaje por cenários diversos, repletos de mistérios e missões.  
+- **Batalhas Estratégicas**: Combata inimigos com um sistema de batalha dinâmico baseado em turnos.  
+- **Multiplayer** *(planejado)*: Enfrente outros jogadores ou forme equipes para superar desafios.  
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🎨 Objetivo do Frontend  
 
-```bash
-ng generate component component-name
-```
+Este repositório é responsável por:  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Interface do Usuário (UI)**: Criação de telas para menu, personagens, batalhas, inventário e mais.  
+- **Animações e Feedbacks Visuais**: Melhorar a interação do jogador com o jogo.  
+- **Integração com o Backend**: Comunicação eficiente com a API para autenticação, dados de jogo, e atualizações em tempo real.  
+- **Aprimoramento da Experiência do Usuário (UX)**: Garantir que a interface seja responsiva e de fácil uso em dispositivos móveis e desktops.  
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🚀 Tecnologias Utilizadas  
 
-To build the project run:
+- **Framework:** Angular
+- **Estilização:** CSS3, Scss  
+- **Construção de Interfaces:** Angular Router para navegação. 
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📦 Estrutura do Projeto  
 
-## Running unit tests
+```plaintext
+chaos-trials-frontend/
+│
+├── src/
+│   ├── assets/          # Imagens, ícones, e recursos estáticos
+│   ├── components/      # Componentes reutilizáveis da interface
+│   ├── view/           # Páginas principais do jogo (Login, Mapa, Combate, etc.)
+│   ├── services/        # Comunicação com APIs
+│   ├── utils/           # Funções auxiliares e constantes
+│   └── styles/          # Arquivos de estilização globais
+│
+├── public/              # Arquivos públicos acessíveis pelo navegador
+├── README.md            # Este arquivo
+└── package.json         # Configuração do projeto e dependências
+```  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## ⚙️ Como Rodar o Projeto  
 
-## Running end-to-end tests
+1. **Clone o repositório:**  
+   ```bash
+   git clone https://github.com/seu-usuario/chaos-trials-frontend.git
+   cd chaos-trials-frontend
+   ```
 
-For end-to-end (e2e) testing, run:
+2. **Instale as dependências:**  
+   ```bash
+   npm install
+   ```
 
-```bash
-ng e2e
-```
+3. **Execute o servidor de desenvolvimento:**  
+   ```bash
+   npm start
+   ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+4. **Acesse o jogo no navegador:**  
+   O jogo estará disponível em `http://localhost:3000` (ou na porta configurada).  
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🛠️ Funcionalidades Planejadas  
+
+- [ ] Sistema de criação e customização de personagens.  
+- [ ] Mapa interativo para exploração.  
+- [ ] Sistema de combate baseado em turnos.  
+- [ ] Loja e inventário para gerenciar itens e equipamentos.  
+- [ ] Progressão e níveis de habilidades.  
+- [ ] Multiplayer (PvP e Co-op).  
+
+---
+
+## 🌟 Contribuições  
+
+Contribuições são bem-vindas! Se você deseja ajudar, siga os passos abaixo:  
+
+1. Faça um **fork** do projeto.  
+2. Crie uma nova branch para a funcionalidade/correção:  
+   ```bash
+   git checkout -b minha-nova-feature
+   ```  
+3. Commit suas alterações:  
+   ```bash
+   git commit -m 'Adiciona nova funcionalidade'
+   ```  
+4. Envie para o repositório remoto:  
+   ```bash
+   git push origin minha-nova-feature
+   ```  
+5. Abra um **Pull Request** detalhando suas alterações.  
+
+---
+
+## 🧩 Backend  
+
+O repositório do backend está disponível [aqui](https://github.com/guigasprog/development-chaos-trials-back)
+
+---
+
+## 📚 Referências  
+
+- Documentação oficial das tecnologias utilizadas.  
+- Especificações e conceitos do projeto *(se aplicável)*.  
+
+---
+
+## 📜 Licença  
+
+Este projeto está sob a licença [MIT](LICENSE).  
+
+---  
+
+**Chaos Trials**: Domine o caos. Conquiste seu destino!  
