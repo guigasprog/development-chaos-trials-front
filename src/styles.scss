@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+// Importação de fontes
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Tangerine:wght@400;700&family=Varta:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Paleta de cores
+$color-background: #2c2c2c; // Fundo do card (escuro translúcido)
+$color-background-light: rgba(255, 255, 255, 0.2); // Fundo claro para campos
+$color-background-focus: rgba(255, 255, 255, 0.4); // Fundo em foco
+$color-primary: #007bff; // Cor principal (botão e destaques)
+$color-primary-hover: #0056b3; // Hover do botão
+$color-text: #fff; // Texto padrão
+$color-placeholder: rgba(255, 255, 255, 0.7); // Placeholder
+$color-link: #fdcc39; // Link de registro
+$color-link-hover: #ffd54f; // Hover do link
+$color-shadow: rgba(0, 0, 0, 0.2); // Sombras
+$color-success: #28a745; // Verde para mensagens válidas
+$color-warning: #ffc107; // Amarelo para avisos
+$color-danger: #dc3545; // Vermelho para erros
+
+// Configurações gerais
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+// Estilos do corpo
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+// Títulos
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $color-primary;
+}
+
+.title {
+  padding: 10px;
+  font-size: 32px;
+  color: $color-primary;
+  text-align: center;
+}
+
+// Container principal
+.container {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Cartão
+.card {
+  background-color: $color-background;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px $color-shadow;
+  text-align: center;
+}
+
+// Links
+a {
+  color: $color-link;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+// Estilo responsivo
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
