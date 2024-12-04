@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card">
+    <form [formGroup]="myForm" (ngSubmit)="logar()" class="form">
+      <h1 class="title">Login</h1>
+      <div class="input-group">
+        <input
+          class="input-field"
+          minlength="4"
+          formControlName="username"
+          type="text"
+          placeholder="Email/Username"
+          required
+        />
+      </div>
+      <br />
+      <div class="input-group">
+        <input
+          class="input-field"
+          formControlName="password"
+          type="password"
+          placeholder="Senha"
+          minlength="8"
+          required
+        />
+      </div>
+      <div class="flex center">
+        <a href="#" class="register-link">Não possuo conta, cadastrar-se</a> |
+        <a href="#" class="register-link">Esqueci a senha</a>
+      </div>
+      <br />
+      <button type="submit" class="btn">Acessar conta</button>
+    </form>
+  </div>
+</div>
